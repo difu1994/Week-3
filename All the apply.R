@@ -41,9 +41,11 @@ h <- gl(3,10) #generate a factor with 3 levels each with 10 elements
 g1 <- tapply(g, h, mean)
 
 
+library(datasets)
 
-
-
+q <- airquality
+q1 <- split(airquality$Ozone, airquality$Month) #split dataframe into lists of months 
+                                                #with values of Ozone in each list
 
 
 
